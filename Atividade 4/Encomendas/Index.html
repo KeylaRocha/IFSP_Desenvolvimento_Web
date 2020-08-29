@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset = "UTF-8">
+    <title>Encomendar Bolo</title>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+  </head>
+
+  <body>
+    <header>
+      <h1>Pães Doces e Bolos</h1>
+
+      <ul>
+        <li> <a href = "../Index.html">Página Principal</a> </li>
+        <li> <a href = "#body">Encomendar Bolo</a> </li>
+      </ul>
+
+    </header>
+
+    <main>
+      <h2>Encomendar Bolo</h2>
+
+      <form method="get">
+
+        <div>
+          <label for="nome">Nome:</label>
+          <input id="nome" type = "text" size = "35" maxlength = "35" name = "Nome" autofocus placeholder = "Digite seu nome"> 
+
+          <label for="ddd">DDD: (</label>
+          <input id = "ddd" type = "text" size = "2" maxlength = "2" name = "DDD" placeholder = "DDD">
+
+          <label for="telefone">) Telefone:</label>
+          <input id = "telefone" type = "text" size = "10" maxlength = "10" name = "Telefone" placeholder = "Telefone">          
+        </div>
+
+        </br>
+
+        <table border = "1">
+          <caption>Bolos</caption>
+          <tr>
+            <td> <img src = "../Imagens/Bolo01.png" alt = "Bolo de Chocolate" width = "200"> </td>
+            <td> <img src = "../Imagens/Bolo02.png" alt = "Bolo de Frutas" width = "200"> </td>
+            <td> <img src = "../Imagens/Bolo03.png" alt = "Bolo Misto" width = "200"> </td>
+          </tr>
+
+          <tr>
+            <th>Chocolate</th>
+            <th>Frutas</th>
+            <th>Misto</th>
+          </tr>
+
+        </table>
+
+        <div>
+
+          <label for="sabores">Sabor:</label>
+          <select name="Sabores" id="sabores" required>
+            <option value="" hidden selected>Escolha...</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Frutas">Frutas</option>
+            <option value="Misto">Misto</option>
+          </select>
+
+          <label for="tipo">Tipo: </label>
+          <input id="tipo" type = "radio" name = "Tipo" value = "Simples">Simples
+          <input type = "radio" name = "Tipo" value = "Decorado"> Decorado
+
+          </br>
+          </br>
+
+          <label for="tamanho">Tamanho: </label>
+          <input id="tamanho" type = "number" min = "1" max = "10" name = "tamanho">kg 
+          <input type = "checkbox" name = "Diet"> Diet?
+
+          </br>
+          </br>
+
+          <label for="obs">Observações:</label>
+
+          </br>
+
+          <textarea id="obs" name="Observações" rows="3" cols="80" placeholder="Observações sobre o pedido"></textarea>
+
+          </br>
+          </br>
+
+          <input type = "submit" name = "Enviar" value = "Enviar Pedido"> 
+          <input type = "reset" name = "Limpar" value = "Limpar">
+
+        </div>
+      </form>
+    </main>
+  </body>
+
+</html>
