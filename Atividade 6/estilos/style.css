@@ -97,7 +97,7 @@ img{
   animation-iteration-count: infinite;
   animation-name: muda_imagem;
 }
-  @keyframes muda_imagens{
+  @keyframes muda_imagem{
     0%{
       background-image: url("../imagens/Anima1.jpg");
     }
