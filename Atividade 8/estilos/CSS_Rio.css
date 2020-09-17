@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+html{
+  background: linear-gradient(to bottom, powderblue, midnightblue);
+}
+
+header{
+  background-color: midnightblue;
+}
+
+#texto_destaque{
+  color: gold;
+}

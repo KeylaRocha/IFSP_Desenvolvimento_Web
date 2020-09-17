@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+html{
+  background: linear-gradient(to bottom, springgreen, seagreen);
+}
+
+header{
+  background-color: forestgreen;
+}
+
+#texto_destaque{
+  color: darkslategray;
+}
