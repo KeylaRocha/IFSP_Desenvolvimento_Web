@@ -10,6 +10,15 @@ var paris = ["Paris", "2013", "imagens/Paris2013.jpg"];
 
 var albuns = [useMe, hallucinations, allWeKnowOfHeavenAllWeNeedFromHell, whiteNoise, paris];
 
+var entrevistas = [
+                  ["https://www.youtube.com/embed/Fz7zKdDvhHE", "St. Mary's interview"],
+                  ["https://www.youtube.com/embed/atoaLG2B_0Q", "Kids interview PVRIS"],
+                  ["https://www.youtube.com/embed/4Pl2uTCSGEA", "PVRIS answer your questions"],
+                  ["https://www.youtube.com/embed/-UgneWuKvJc", "Lynn Gunn interview"],
+                  ["https://www.youtube.com/embed/HpxalOxk0uE", "Lynn Gunn answers fans"],
+                  ["https://www.youtube.com/embed/RZNjIM9qcEc", "PVRIS interview with pippies"]
+                  ]; 
+
 function trocaAlbum(opcao){
   var index = parseInt(opcao);
   capa.src = albuns[index][2];
@@ -19,3 +28,8 @@ function trocaAlbum(opcao){
   caption.innerHTML = albuns[index][0] + ", " + albuns[index][1];
 }
 
+function trocaEntrevista(opcao){
+  var index = parseInt(opcao);
+  video.src = entrevistas[index][0];
+  titulo.innerHTML = entrevistas[index][1];
+}

@@ -42,15 +42,32 @@
   </header>
 
     <main>
-      <select name="entrevistas" id="entrevistas" onchange="trocaVideo()">
+      <div class="entrevistas">
+      <select name="entrevistas" onchange="trocaEntrevista(this.value)">
         <option value="" selected disabled >--- Entrevistas ---</option>
-      </select>
-      
-        <video id="video">
-  
-        </video>
 
+        <option value="0">St. Mary's interview</option>
+
+        <option value="1">Kids interview PVRIS</option>
+
+        <option value="2">PVRIS answer your questions</option>
+
+        <option value="3">Lynn Gunn interview</option>
+
+        <option value="4">Lynn Gunn answers fans</option>
+
+        <option value="5">PVRIS interview with pippies</option>
+      </select>
+    
+      
+      <iframe id="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h1 id="titulo"></h1>
     </main>
+    </div>
   
+    <script>
+      trocaEntrevista("0");
+    </script>
   </body>
 </html>
+
